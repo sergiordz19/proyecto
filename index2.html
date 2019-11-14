@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formulario de Registro</title>
+<link  rel="stylesheet" type="text/css" href="estilo.css">
+
+</head>
+
+<body>
+<div class="form">
+<form action="guardar.php" method="post">
+<p>Nombre</p>
+<label for="nombre">Su nombre</label>
+<br>
+<input type="text" name="nombre" placeholder="Nombre" required="required" />
+<p>Correo</p>
+<label for="correo">Direccion de correo</label>
+<br>
+<input type="email" name="correo" placeholder="nombre@algo.com" required="required" />
+<p>Telefono</p>
+<label for="telefono">Telefono o Cel.</label>
+<br>
+<input type="tel" name="telefono" placeholder="Telefono" required="required" />
+<p>Edad</p>
+<label for="edad">Ingrese su Edad</label>
+<br>
+<input type="number" name="edad" placeholder="Edad" required="required" />
+<br>
+<br>
+<input type="submit" value="Enviar" />
+</form>
+</div>
+</body>
+</html>

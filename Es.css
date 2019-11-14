@@ -1,0 +1,110 @@
+h1{
+  font-family: sans-serif;
+}
+
+h2
+{
+  font: bold 14px sans-serif;
+}
+
+body{
+  margin:0;
+  min-height: 100vh;
+  background-image: url(Viajar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+
+
+.agrupar{
+  width: 1285px;
+  background: #f5cd79;
+  margin: 15px auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.cabecera{
+  background: white;
+  border: 0.3px  solid #2d3436;
+}
+
+.cabecera img{
+  width: 120px;
+}
+
+.menu{
+  width: 60%;
+  background: #f7d794;
+  color: white;
+  padding: 0.1px;
+  text-align: left;
+
+}
+
+.menu li{
+  list-style: none;
+  padding: 5px;
+  font: bold 14px sans-serif;
+  display: inline-block;
+}
+
+.letra{
+  font:bold 15px sans-serif;
+}
+
+.columna{
+  width: 30%;
+  float: right;
+  font: bold 15px sans-serif;
+}
+
+.pie{
+  text-align: right;
+  color: black;
+}
+
+div {
+  height: 100%;
+  width: 100%;
+}      
+p.enlace {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+#contenido {
+  background-color: white;
+  height: 500px;
+  left: 0px;
+  overflow: hidden;
+  position: top;
+  top: 100%;
+  width: 100%;
+}
+
+article{
+  color: white;
+}
+
+.des h1{
+  color: orange;
+}
+
+.des img{
+  padding-top: 5%;
+  padding-left: 5%;
+  width: 27%;
+}
+
+#Registrate{
+  color: orange;
+}
+
+
+

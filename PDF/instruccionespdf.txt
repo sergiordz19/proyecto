@@ -1,0 +1,14 @@
+Instrucciones:
+
+Descomprime el archivo en htpdocs (xampp)  o en www (wamp)
+
+se generará la carpeta de la librería fpdf, un formulario en html 
+que manda llamar a un archivo en php
+
+ejeculña el html desde localhost y verifica que tu navegador
+permita ventanas emergentes
+
+
+de cualquier modo el archivo que se genera  es prueba.pdf
+en el mismo directorio
+

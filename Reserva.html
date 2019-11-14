@@ -1,0 +1,863 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Reservar</title>
+<script>
+
+</script>
+<style type="text/css">
+        .auto-style1 {
+            width: 91%;
+        }
+        .auto-style2 {
+            text-align: center;
+            width: 1122px;
+        }
+        .auto-style3 {
+            width: 30px;
+            background-color: lightpink;
+            text-align: center;
+        }
+        .auto-style4 {
+            width: 35px;
+        }
+        .auto-style5 {
+            width: 36px;
+        }
+        .auto-style6 {
+            width: 30px;
+            height: 34px;
+        }
+        .auto-style7 {
+            width: 36px;
+            height: 34px;
+        }
+        .auto-style8 {
+            width: 35px;
+            height: 34px;
+        }
+        .auto-style10 {
+            width: 32px;
+        }
+        .auto-style11 {
+            width: 32px;
+            height: 34px;
+        }
+        .auto-style12 {
+            width: 34px;
+        }
+        .auto-style13 {
+            width: 34px;
+            height: 34px;
+        }
+        .nuevoEstilo1 {
+            border-top-style: solid;
+        }
+        .auto-style14 {
+            width: 35px;
+            height: 34px;
+            text-align: center;
+        }
+        .auto-style15 {
+            width: 35px;
+            text-align: center;
+        }
+        .auto-style16 {
+            text-align: center;
+        }
+        .auto-style17 {
+            width: 34px;
+            text-align: center;
+        }
+        .auto-style18 {
+            width: 32px;
+            text-align: center;
+        }
+        .auto-style19 {
+            width: 36px;
+            text-align: center;
+        }
+        .highlighted {
+            background-color:grey;
+        }
+		
+		.checkeable input {
+  display: none;
+}
+.checkeable img {
+  width: 100px;
+  border: 5px solid transparent;
+}
+.checkeable input {
+  display: none;
+}
+.checkeable input:checked  + img {
+  border-color: green;
+}
+    </style>
+    
+    <!-- src="jquery/jquery-1.11.1.min.js" -->
+    <script type="text/javascript">
+		
+    </script>
+    
+</head>
+
+<body>
+
+<h1><center> VUELOS </h1></center>
+<div class="form">
+<form name="reserva">
+<form action="guardarpago.php" method="post">
+
+<label for="Origen">Origen:</label> 
+<label for="origen">Torréon, Coahuila</label> 
+<br>
+<label for="Destino">Destino:</label> 
+<select id="destinos" onchange="dselec();">
+<option value="0" selected>Dubai</option>
+<option value="1">Moscú</option>
+<option value="2">Ámsterdan</option>
+</select>
+<input type="text" id="txtvalue" />
+<label for="Fechas">Fechas:</label> 
+<input type="date"/> 
+<!--button type="submit">Buscar</button-->
+<br>
+<br>
+<br>
+
+ <table class="auto-style1">
+        <tr id="butaca">
+            <td class="auto-style3">
+                1</td>
+            <td>&nbsp;
+                </td>
+            <td class="auto-style5">&nbsp;</td>
+            <td class="auto-style15">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx1" value="Asiento 1" />
+                <img alt="" src="asiento_libre.png" style="height: 29px; width: 35px" /></td>
+                </label>
+            <td class="auto-style15">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx2" value="two_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 29px; width: 35px" /></td>
+                </label>
+            <td class="auto-style15">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx3" value="three_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 29px; width: 35px" /></td>
+                </label>
+            <td class="auto-style15">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx4" value="for_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 29px; width: 35px" /></td>
+                </label>
+            <td class="auto-style15">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx5" value="five_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 29px; width: 35px" /></td>
+           		</label>
+            <td class="auto-style15">&nbsp;</td>
+            <td class="auto-style15">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx6" value="six_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 29px; width: 35px" /></td>
+                </label>
+            <td class="auto-style15">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx7" value="seven_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 29px; width: 35px" /></td>
+                </label>
+            <td class="auto-style15">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx8" value="eight_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 29px; width: 35px" /></td>
+                </label>
+            <td class="auto-style15">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx9" value="nine_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 29px; width: 35px" /></td>
+                </label>
+            <td class="auto-style15">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx10" value="ten_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 29px; width: 35px" /></td>
+            	</label>
+            
+            <td class="auto-style10">&nbsp;</td>
+            <td class="auto-style12">&nbsp;</td>
+            <td class="auto-style3">1</td>
+        </tr>
+		<tr>
+        <td class="auto-style3">2</td>
+            <td class="auto-style6"></td>
+            <td class="auto-style7"></td>
+            <td class="auto-style14">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx21" value="eleven_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style14">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx22" value="twelve_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style14">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx23" value="trece_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style14">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx24" value="catorce_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style14">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx25" value="catorce_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style8"></td>
+            <td class="auto-style14">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx26" value="sixteen_cbx" />
+                <img alt="" src="asiento_libre.png"" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style14">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx27" value="seventeen_cbx" />
+                <img alt="" src="asiento_libre.png"style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style14">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx28" value="eighteen_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style14">
+            <label class="checkeable">
+            	<input type="checkbox" id="cbx29" value="nineteen_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style14">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx30" value="twenty_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+           
+            <td class="auto-style11"></td>
+            <td class="auto-style13"></td>
+            <td class="auto-style3">2</td>
+        </tr>
+
+		<tr>
+        <td class="auto-style3">3</td>
+            <td class="auto-style6"></td>
+            <td class="auto-style7"></td>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx31" value="twertyone_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            <label class="checkeable">
+            	<input type="checkbox" id="cbx32" value="twentytwo_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx33" value="twentytree_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx34" value="twentyfour_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx35" value="twentyfive_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+ 
+            <td class="auto-style8"></td>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx36" value="twentysix_cbx" />
+                <img alt="" src="asiento_libre.png"" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx37" value="twentyseven_cbx" />
+                <img alt="" src="asiento_libre.png"style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx38" value="twentyeight_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx39" value="twentynine_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx40" value="thirty_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+           
+            <td class="auto-style11"></td>
+            <td class="auto-style13"></td>
+            <td class="auto-style3">3</td>
+        </tr>
+
+		<tr>
+        <td class="auto-style3">4</td>
+            <td class="auto-style6"></td>
+            <td class="auto-style7"></td>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx41" value="thirtyone_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx42" value="thirtytwo_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx43" value="thirtytree_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx44" value="thirtyfour_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx45" value="thirtyfive_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+ 
+            <td class="auto-style8"></td>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx46" value="thirtysix_cbx" />
+                <img alt="" src="asiento_libre.png"" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx47" value="thirtyseven_cbx" />
+                <img alt="" src="asiento_libre.png"style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx48" value="tthirtyeight_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx49" value="thirtynine_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx50" value="forty_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+           
+            <td class="auto-style11"></td>
+            <td class="auto-style13"></td>
+            <td class="auto-style3">4</td>
+        </tr>
+        <tr>
+        <td class="auto-style3">5</td>
+            <td class="auto-style6"></td>
+            <td class="auto-style7"></td>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx51" value="fortyone_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx52" value="fortytwo_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx53" value="fortytree_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx54" value="fortyfour_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx55" value="fortyfive_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+ 
+            <td class="auto-style8"></td>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx56" value="fortysix_cbx" />
+                <img alt="" src="asiento_libre.png"" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx57" value="fortysix_cbx" />
+                <img alt="" src="asiento_libre.png"style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx58" value="fortyeight_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx59" value="fortynine_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+            <td class="auto-style16">
+            	<label class="checkeable">
+            	<input type="checkbox" id="cbx60" value="fifty_cbx" />
+                <img alt="" src="asiento_libre.png" style="height: 25px; width: 34px" /></td>
+                </label>
+           
+            <td class="auto-style11"></td>
+            <td class="auto-style13"></td>
+            <td class="auto-style3">5</td>
+        </tr>
+        
+<div id="header"></div>
+
+        <div id="wrapper">
+
+            <div id="myTickets">
+
+                
+
+                <div id="myTicket">
+
+                    
+
+                </div>
+
+            </div>
+
+            <div id="seating">
+
+                
+
+                <table id="crear"></table>
+
+ 
+
+                <div style="clear:both">
+
+                </div>
+
+                <br />
+
+                <div id="theButtons">
+
+                    <input 
+                        type="button" 
+                        value="Reservar Asientos" 
+                        id="reservar" 
+                        onclick="Validar()"  />
+                        &nbsp;
+						
+					<input type="button" onclick="location.href='index3.html';" value="Pagar"  />
+                     
+
+                    <input type="reset" id="resetear" value="Reset" />
+
+                </div>
+
+            </div>
+
+        </div>
+        <br />
+        
+<p id="Reservacion lista"></p>
+</div>
+</form>
+</form>
+</body>
+<script>
+function Validar(obj){
+	var c1 = document.getElementById('cbx1').checked;
+	var c2 = document.getElementById('cbx2').checked;
+	var c3 = document.getElementById('cbx3').checked;
+	var c4 = document.getElementById('cbx4').checked;
+	var c5 = document.getElementById('cbx5').checked;
+	var c6 = document.getElementById('cbx6').checked;
+	var c7 = document.getElementById('cbx7').checked;
+	var c8 = document.getElementById('cbx8').checked;
+	var c9 = document.getElementById('cbx9').checked;
+	var c10 = document.getElementById('cbx10').checked;
+	var c11 = document.getElementById('cbx21').checked;
+	var c12 = document.getElementById('cbx22').checked;
+	var c13 = document.getElementById('cbx23').checked;
+	var c14 = document.getElementById('cbx24').checked;
+	var c15 = document.getElementById('cbx25').checked;
+	var c16 = document.getElementById('cbx26').checked;
+	var c17 = document.getElementById('cbx27').checked;
+	var c18 = document.getElementById('cbx28').checked;
+	var c19 = document.getElementById('cbx29').checked;
+	var c20 = document.getElementById('cbx30').checked;
+	var c21 = document.getElementById('cbx31').checked;
+	var c22 = document.getElementById('cbx32').checked;
+	var c23 = document.getElementById('cbx33').checked;
+	var c24 = document.getElementById('cbx34').checked;
+	var c25 = document.getElementById('cbx35').checked;
+	var c26 = document.getElementById('cbx36').checked;
+	var c27 = document.getElementById('cbx37').checked;
+	var c28 = document.getElementById('cbx38').checked;
+	var c29 = document.getElementById('cbx39').checked;
+	var c30 = document.getElementById('cbx40').checked;
+	var c31 = document.getElementById('cbx41').checked;
+	var c32 = document.getElementById('cbx42').checked;
+	var c33 = document.getElementById('cbx43').checked;
+	var c34 = document.getElementById('cbx44').checked;
+	var c35 = document.getElementById('cbx45').checked;
+	var c36 = document.getElementById('cbx46').checked;
+	var c37 = document.getElementById('cbx47').checked;
+	var c38 = document.getElementById('cbx48').checked;
+	var c39 = document.getElementById('cbx49').checked;
+	var c40 = document.getElementById('cbx50').checked;
+	var c41 = document.getElementById('cbx51').checked;
+	var c42 = document.getElementById('cbx52').checked;
+	var c43 = document.getElementById('cbx53').checked;
+	var c44 = document.getElementById('cbx54').checked;
+	var c45 = document.getElementById('cbx55').checked;
+	var c46 = document.getElementById('cbx56').checked;
+	var c47 = document.getElementById('cbx57').checked;
+	var c48 = document.getElementById('cbx58').checked;
+	var c49 = document.getElementById('cbx59').checked;
+	var c50 = document.getElementById('cbx60').checked;
+	var escoger = '';
+	if(c1==true) {
+		escoger += 'Has escogido el Asiento 1';
+	}
+	else {
+		escoger += '';
+	}
+	if(c2==true) {
+		escoger += 'Has escogido el Asiento 2';
+	}
+	else {
+		escoger += '';
+	}
+	if(c3==true) {
+		escoger += 'Has escogido el Asiento 3';
+	}
+	else {
+		escoger += '';
+	}
+	if(c4==true) {
+		escoger += 'Has escogido el Asiento 4';
+	}
+	else {
+		escoger += '';
+	}
+	if(c5==true) {
+		escoger += 'Has escogido el Asiento 5';
+	}
+	else {
+		escoger += '';
+	}
+	if(c6==true) {
+		escoger += 'Has escogido el Asiento 6';
+	}
+	else {
+		escoger += '';
+	}
+	if(c7==true) {
+		escoger += 'Has escogido el Asiento 7';
+	}
+	else {
+		escoger += '';
+	}
+	if(c8==true) {
+		escoger += 'Has escogido el Asiento 8';
+	}
+	else {
+		escoger += '';
+	}
+	if(c9==true) {
+		escoger += 'Has escogido el Asiento 9';
+	}
+	else {
+		escoger += '';
+	}
+	if(c10==true) {
+		escoger += 'Has escogido el Asiento 10';
+	}
+	else {
+		escoger += '';
+	}
+	if(c11==true) {
+		escoger += 'Has escogido el Asiento 21';
+	}
+	else {
+		escoger += '';
+	}
+	if(c12==true) {
+		escoger += 'Has escogido el Asiento 22';
+	}
+	else {
+		escoger += '';
+	}
+	if(c13==true) {
+		escoger += 'Has escogido el Asiento 23';
+	}
+	else {
+		escoger += '';
+	}
+	if(c14==true) {
+		escoger += 'Has escogido el Asiento 24';
+	}
+	else {
+		escoger += '';
+	}
+	if(c15==true) {
+		escoger += 'Has escogido el Asiento 25';
+	}
+	else {
+		escoger += '';
+	}
+	if(c16==true) {
+		escoger += 'Has escogido el Asiento 26';
+	}
+	else {
+		escoger += '';
+	}
+	if(c17==true) {
+		escoger += 'Has escogido el Asiento 27';
+	}
+	else {
+		escoger += '';
+	}
+	if(c18==true) {
+		escoger += 'Has escogido el Asiento 28';
+	}
+	else {
+		escoger += '';
+	}
+	if(c19==true) {
+		escoger += 'Has escogido el Asiento 29';
+	}
+	else {
+		escoger += '';
+	}
+	if(c20==true) {
+		escoger += 'Has escogido el Asiento 30';
+	}
+	else {
+		escoger += '';
+	}
+	if(c21==true) {
+		escoger += 'Has escogido el Asiento 31';
+	}
+	else {
+		escoger += '';
+	}
+	if(c22==true) {
+		escoger += 'Has escogido el Asiento 32';
+	}
+	else {
+		escoger += '';
+	}
+	if(c23==true) {
+		escoger += 'Has escogido el Asiento 33';
+	}
+	else {
+		escoger += '';
+	}
+	if(c24==true) {
+		escoger += 'Has escogido el Asiento 34';
+	}
+	else {
+		escoger += '';
+	}
+	if(c25==true) {
+		escoger += 'Has escogido el Asiento 35';
+	}
+	else {
+		escoger += '';
+	}
+	if(c26==true) {
+		escoger += 'Has escogido el Asiento 36';
+	}
+	else {
+		escoger += '';
+	}
+	if(c27==true) {
+		escoger += 'Has escogido el Asiento 37';
+	}
+	else {
+		escoger += '';
+	}
+	if(c28==true) {
+		escoger += 'Has escogido el Asiento 38';
+	}
+	else {
+		escoger += '';
+	}
+	if(c29==true) {
+		escoger += 'Has escogido el Asiento 39';
+	}
+	else {
+		escoger += '';
+	}
+	if(c30==true) {
+		escoger += 'Has escogido el Asiento 40';
+	}
+	else {
+		escoger += '';
+	}
+	if(c31==true) {
+		escoger += 'Has escogido el Asiento 41';
+	}
+	else {
+		escoger += '';
+	}
+	if(c32==true) {
+		escoger += 'Has escogido el Asiento 42';
+	}
+	else {
+		escoger += '';
+	}
+	if(c33==true) {
+		escoger += 'Has escogido el Asiento 43';
+	}
+	else {
+		escoger += '';
+	}
+	if(c34==true) {
+		escoger += 'Has escogido el Asiento 44';
+	}
+	else {
+		escoger += '';
+	}
+	if(c35==true) {
+		escoger += 'Has escogido el Asiento 45';
+	}
+	else {
+		escoger += '';
+	}
+	if(c36==true) {
+		escoger += 'Has escogido el Asiento 46';
+	}
+	else {
+		escoger += '';
+	}
+	if(c37==true) {
+		escoger += 'Has escogido el Asiento 47';
+	}
+	else {
+		escoger += '';
+	}
+	if(c38==true) {
+		escoger += 'Has escogido el Asiento 48';
+	}
+	else {
+		escoger += '';
+	}
+	if(c39==true) {
+		escoger += 'Has escogido el Asiento 49';
+	}
+	else {
+		escoger += '';
+	}
+	if(c40==true) {
+		escoger += 'Has escogido el Asiento 50';
+	}
+	else {
+		escoger += '';
+	}
+	if(c41==true) {
+		escoger += 'Has escogido el Asiento 51';
+	}
+	else {
+		escoger += '';
+	}
+	if(c42==true) {
+		escoger += 'Has escogido el Asiento 52';
+	}
+	else {
+		escoger += '';
+	}
+	if(c43==true) {
+		escoger += 'Has escogido el Asiento 53';
+	}
+	else {
+		escoger += '';
+	}
+	if(c44==true) {
+		escoger += 'Has escogido el Asiento 54';
+	}
+	else {
+		escoger += '';
+	}
+	if(c45==true) {
+		escoger += 'Has escogido el Asiento 55';
+	}
+	else {
+		escoger += '';
+	}
+	if(c46==true) {
+		escoger += 'Has escogido el Asiento 56';
+	}
+	else {
+		escoger += '';
+	}
+	if(c47==true) {
+		escoger += 'Has escogido el Asiento 57';
+	}
+	else {
+		escoger += '';
+	}
+	if(c48==true) {
+		escoger += 'Has escogido el Asiento 58';
+	}
+	else {
+		escoger += '';
+	}
+	if(c49==true) {
+		escoger += 'Has escogido el Asiento 59';
+	}
+	else {
+		escoger += '';
+	}
+	if(c50==true) {
+		escoger += 'Has escogido el Asiento 60';
+	}
+	else {
+		escoger += '';
+	}
+	alert(document.getElementById('Reservacion lista').innerHTML = escoger);
+	var d=document.getElementById("destinos");
+	var dtext=d.options[d.selectedIndex].text;
+	document.getElementById("txtvalue").value=dtext;
+	alert(document.getElementById('txtvalue').innerHTML = "Destino: "+dtext);
+}
+/*
+function dselec() {
+	var d=document.getElementById("destinos");
+	var dtext=d.options[d.selectedIndex].text;
+	document.getElementById("txtvalue").value=dtext;
+	alert(document.getElementById('txtvalue').innerHTML = "Destino: "+dtext);
+}
+*/
+
+</script>
+</html>

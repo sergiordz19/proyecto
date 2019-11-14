@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formulario de Pago</title>
+<link  rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+<div class="form">
+<form action="guardarpago.php" method="post">
+<p>Nombre</p>
+<input type="text" name="nombre" placeholder="Nombre" required="required" />
+<p>Correo</p>
+<input type="email" name="correo" placeholder="nombre@algo.com" required="required" />
+<p>Telefono</p>
+<input type="tel" name="telefono" placeholder="Telefono" required="required" />
+<p>Edad</p>
+<input type="number" name="edad" placeholder="Edad" required="required" />
+<p>Método de pago</p>
+<input type="text" name="tipo" placeholder="Tarjeta de crédito o Débito / PayPal" required="required" />
+<p>Número de tarjeta</p>
+<input type="number" name="numtarje" placeholder="XXXX" required="required" />
+<p>Fecha de vencimiento</p>
+<input type="date" name="fechaven" placeholder="Enero-Diciembre" required="required" />
+<p>Código de seguridad</p>
+<input type="number" name="codigo" placeholder="XXX" required="required" />
+<p>Destino</p>
+<input type="text" name="destino" placeholder="Destino" required="required" />
+<p>Asientos</p>
+<input type="number" name="asientos" placeholder="XX" required="required" />
+<br>
+<br>
+<input type="submit" value="Enviar" />
+</form>
+</div>
+</body>
+
+</html>
